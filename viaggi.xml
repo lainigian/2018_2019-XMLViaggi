@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<viaggi
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="viaggi.xsd">
+	<viaggio>
+		<id_viaggio>1</id_viaggio>
+		<mezzo>auto</mezzo>
+		<luogo_partenza>Brescia</luogo_partenza>
+		<data_ora_partenza>2019-02-05T12:00:00</data_ora_partenza>
+		<luogo_arrivo>Viareggio</luogo_arrivo>
+		<data_ora_arrivo>2019-02-05T16:30:00</data_ora_arrivo>
+		<durata>PT4H30M</durata>
+		<costo>38</costo>
+	</viaggio>
+	<viaggio>
+		<id_viaggio>2</id_viaggio>
+		<mezzo>treno</mezzo>
+		<luogo_partenza>Napoli</luogo_partenza>
+		<data_ora_partenza>2019-02-05T08:00:00</data_ora_partenza>
+		<luogo_arrivo>Roma</luogo_arrivo>
+		<data_ora_arrivo>2019-02-05T10:30:00</data_ora_arrivo>
+		<durata>PT2H30M</durata>
+		<costo>12</costo>
+	</viaggio>
+</viaggi>

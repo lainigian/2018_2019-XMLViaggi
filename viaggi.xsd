@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="tipoViaggio">
+		<xs:sequence>
+			<xs:element name="id_viaggio" type="xs:integer"/>
+			<xs:element name="mezzo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="auto"/>
+						<xs:enumeration value="aereo"/>
+						<xs:enumeration value="treno"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="luogo_partenza" type="xs:string"/>
+			<xs:element name="data_ora_partenza" type="xs:dateTime"/>
+			<xs:element name="luogo_arrivo" type="xs:string"/>
+			<xs:element name="data_ora_arrivo" type="xs:dateTime"/>
+			<xs:element name="durata" type="xs:duration"/>
+			<xs:element name="costo" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="viaggi">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="viaggio" type="tipoViaggio" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
